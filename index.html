@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Cowher - In-formed Drivers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Car Finders Inc Logo" width="75" height="75">
+        </div>
+        <div class="header_text">
+            <h1>Ideal Car</h1>
+        </div>
+    </header>
+
+    <form id="profileBuilder" action="#" method="get">
+        <fieldset style="width: 25%">
+            <legend style="font-weight:bold;">Customize your car:</legend>
+        <label for="manufacturer">Manufacturer
+            <br>
+
+            <select id="manufacturer" name="manufacturer" size="5" style="width: 100px">
+
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="ford">Ford</option>
+                <option value="mercedes-benz">Mercedes-Benz</option>
+
+            </select>
+            <br><br>
+        </label>
+
+        <label for="carColour">Choose Your Car's Colour
+            <br>
+
+            <input type="color" id="carColour" name="carColour" />
+
+        </label>
+        <br><br>
+        <label for="driveOption">Choose Your Car's Drivetrain Options
+            <br>
+            <input type="checkbox" id="rwd" name="drivetrain" value="rwd" /><label for="rwd">RWD</label><br />
+
+            <input type="checkbox" id="fwd" name="drivetrain" value="fwd" />
+
+            <label for="fwd">FWD</label>
+
+            <br />
+
+            <input type="checkbox" id="awd" name="drivetrain" value="awd" /><label for="awd">AWD</label>
+
+            <br />
+
+            <input type="checkbox" id="4wd" name="drivetrain" value="4wd" /><label for="4wd">4WD</label>
+        </label>
+        <br><br>
+        <label for="licensePlate">Customize Your License Plate
+            <br>
+            <input type="text" id="licensePlate" name="licensePlate" placeholder="XXXXXXX" size="7"
+                minlength="7" maxlength="7" pattern="^[a-zA-Z0-9]*$" />
+        </label>
+        <br><br>
+        <label for="transmission"> Automatic or Manual Transmission?</label>
+        <br>
+        <input type="radio" id="automatic" name="transmission" value="automatic">
+        <label for="automatic">Automatic</label><br>
+        <input type="radio" id="manual" name="transmission" value="manual">
+        <label for="manual">Manual</label>
+    </fieldset>
+    <br>
+        <fieldset style="width: 25%">
+        <legend style="font-weight:bold;">Finalize your order:</legend>
+        <label for="deliveryTime">Schedule Your Car Pickup Time
+
+            <input type="time" id="deliveryTime" name="deliveryTime" />
+
+        </label>
+        <br><br>
+        <label for="comments">
+
+            Additional comments regarding your car:
+
+            <textarea id="comments" name="comments" placeholder="comments">
+
+            </textarea>
+
+        </label>
+    </fieldset>
+        <br>
+        <input type="submit" id="process" value="Submit Car Order"/>
+    </form>
+</body>
+
+</html>
